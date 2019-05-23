@@ -11,8 +11,8 @@
 		963F85812294456500244D6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F85802294456500244D6A /* ViewController.swift */; };
 		963F85842294456500244D6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963F85822294456500244D6A /* Main.storyboard */; };
 		963F85872294456500244D6A /* hora_do_recreio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 963F85852294456500244D6A /* hora_do_recreio.xcdatamodeld */; };
-		963F85892294456700244D6A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963F85882294456700244D6A /* Assets.xcassets */; };
 		963F858C2294456700244D6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963F858A2294456700244D6A /* LaunchScreen.storyboard */; };
+		964030672296E00F00048752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964030662296E00F00048752 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +21,9 @@
 		963F85802294456500244D6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		963F85832294456500244D6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		963F85862294456500244D6A /* hora_do_recreio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = hora_do_recreio.xcdatamodel; sourceTree = "<group>"; };
-		963F85882294456700244D6A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		963F858B2294456700244D6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		963F858D2294456700244D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		964030662296E00F00048752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,10 +56,10 @@
 		963F857D2294456500244D6A /* hora do recreio */ = {
 			isa = PBXGroup;
 			children = (
+				964030662296E00F00048752 /* Assets.xcassets */,
 				963F857E2294456500244D6A /* AppDelegate.swift */,
 				963F85802294456500244D6A /* ViewController.swift */,
 				963F85822294456500244D6A /* Main.storyboard */,
-				963F85882294456700244D6A /* Assets.xcassets */,
 				963F858A2294456700244D6A /* LaunchScreen.storyboard */,
 				963F858D2294456700244D6A /* Info.plist */,
 				963F85852294456500244D6A /* hora_do_recreio.xcdatamodeld */,
@@ -126,7 +126,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				963F858C2294456700244D6A /* LaunchScreen.storyboard in Resources */,
-				963F85892294456700244D6A /* Assets.xcassets in Resources */,
+				964030672296E00F00048752 /* Assets.xcassets in Resources */,
 				963F85842294456500244D6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -286,6 +286,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "hora do recreio/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -303,6 +304,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "hora do recreio/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
