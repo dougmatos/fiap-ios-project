@@ -13,6 +13,8 @@
 		963F85872294456500244D6A /* hora_do_recreio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 963F85852294456500244D6A /* hora_do_recreio.xcdatamodeld */; };
 		963F858C2294456700244D6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963F858A2294456700244D6A /* LaunchScreen.storyboard */; };
 		964030672296E00F00048752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964030662296E00F00048752 /* Assets.xcassets */; };
+		96E3422822976DA500956CC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96E3422722976DA500956CC2 /* GoogleService-Info.plist */; };
+		B39E4C922C05017C613FA7EE /* Pods_hora_do_recreio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E8BEBFA8C541149B1CB006 /* Pods_hora_do_recreio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		963F858B2294456700244D6A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		963F858D2294456700244D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		964030662296E00F00048752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		96E3422722976DA500956CC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		AF7DC48B80A1D0FC14A0D2E8 /* Pods-hora do recreio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hora do recreio.debug.xcconfig"; path = "Target Support Files/Pods-hora do recreio/Pods-hora do recreio.debug.xcconfig"; sourceTree = "<group>"; };
+		BB8B3BE81319A339230A3528 /* Pods-hora do recreio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hora do recreio.release.xcconfig"; path = "Target Support Files/Pods-hora do recreio/Pods-hora do recreio.release.xcconfig"; sourceTree = "<group>"; };
+		F4E8BEBFA8C541149B1CB006 /* Pods_hora_do_recreio.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hora_do_recreio.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39E4C922C05017C613FA7EE /* Pods_hora_do_recreio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7233EABBA4F55FA9DB8C5C64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF7DC48B80A1D0FC14A0D2E8 /* Pods-hora do recreio.debug.xcconfig */,
+				BB8B3BE81319A339230A3528 /* Pods-hora do recreio.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		963F85722294456400244D6A = {
 			isa = PBXGroup;
 			children = (
 				963F857D2294456500244D6A /* hora do recreio */,
 				963F857C2294456500244D6A /* Products */,
+				7233EABBA4F55FA9DB8C5C64 /* Pods */,
+				AB63BA51E3337903B4C396A4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +75,7 @@
 		963F857D2294456500244D6A /* hora do recreio */ = {
 			isa = PBXGroup;
 			children = (
+				96E3422722976DA500956CC2 /* GoogleService-Info.plist */,
 				964030662296E00F00048752 /* Assets.xcassets */,
 				963F857E2294456500244D6A /* AppDelegate.swift */,
 				963F85802294456500244D6A /* ViewController.swift */,
@@ -67,6 +87,14 @@
 			path = "hora do recreio";
 			sourceTree = "<group>";
 		};
+		AB63BA51E3337903B4C396A4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F4E8BEBFA8C541149B1CB006 /* Pods_hora_do_recreio.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 963F85902294456700244D6A /* Build configuration list for PBXNativeTarget "hora do recreio" */;
 			buildPhases = (
+				6718F51EC7146653BE78506B /* [CP] Check Pods Manifest.lock */,
 				963F85772294456500244D6A /* Sources */,
 				963F85782294456500244D6A /* Frameworks */,
 				963F85792294456500244D6A /* Resources */,
+				0E25C83418208235BFA6CC5E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +156,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				963F858C2294456700244D6A /* LaunchScreen.storyboard in Resources */,
+				96E3422822976DA500956CC2 /* GoogleService-Info.plist in Resources */,
 				964030672296E00F00048752 /* Assets.xcassets in Resources */,
 				963F85842294456500244D6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0E25C83418208235BFA6CC5E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hora do recreio/Pods-hora do recreio-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-hora do recreio/Pods-hora do recreio-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-hora do recreio/Pods-hora do recreio-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6718F51EC7146653BE78506B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-hora do recreio-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		963F85772294456500244D6A /* Sources */ = {
@@ -284,6 +357,7 @@
 		};
 		963F85912294456700244D6A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF7DC48B80A1D0FC14A0D2E8 /* Pods-hora do recreio.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -302,6 +376,7 @@
 		};
 		963F85922294456700244D6A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB8B3BE81319A339230A3528 /* Pods-hora do recreio.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
