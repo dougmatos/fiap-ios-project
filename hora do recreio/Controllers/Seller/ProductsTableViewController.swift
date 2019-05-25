@@ -7,40 +7,75 @@
 //
 
 import UIKit
+import Firebase
 
 class ProductsTableViewController: UITableViewController {
 
+    let collection = "products"
+    var firestoreListener : ListenerRegistration!
+    var firestore: Firestore = {
+        let settings = FirestoreSettings()
+        settings.isPersistenceEnabled = true
+        var firestore = Firestore.firestore()
+        firestore.settings = settings
+        return firestore
+    }()
+    
+    var productItems:[ProductItem] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
+        listProducts()
     }
-
-    // MARK: - Table view data source
-
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+    
+    private func listProducts(){
+        firestoreListener = firestore.collection(collection)
+            .order(by: "description")
+            .addSnapshotListener(includeMetadataChanges: true, listener: { (snapshot, error) in
+                guard let snapshot = snapshot else {return}
+                
+                if(snapshot.metadata.isFromCache || snapshot.documentChanges.count > 0){
+                    self.showItems(snapshot)
+                }
+            })
+    }
+    
+    func showItems(_ snapshot : QuerySnapshot){
+        productItems.removeAll()
+        for document in snapshot.documents{
+            let data = document.data()
+            if  let description = data["description"] as? String,
+                let quantity = data["quantity"] as? String,
+                let price = data["price"] as? String{
+                
+                productItems.append(ProductItem(
+                    description: description,
+                    quantity: quantity,
+                    price: price,
+                    id: document.documentID
+                ))
+            }
+        }
+        tableView.reloadData()
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        // #warning Incomplete implementation, return the number of rows
-        return 0
+        return productItems.count
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-
-        // Configure the cell...
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellProduct", for: indexPath) as! ProductTableViewCell
+        let product = productItems[indexPath.row]
+        
+        cell.lbDescrption.text = product.description
+        cell.lbPrice.text = "R$ \(product.price)"
+        cell.lbQuantity.text = "Quantidade \(product.quantity)"
 
         return cell
     }
-    */
+ 
 
     /*
     // Override to support conditional editing of the table view.
@@ -87,4 +122,11 @@ class ProductsTableViewController: UITableViewController {
     }
     */
 
+}
+
+class ProductTableViewCell: UITableViewCell{
+    @IBOutlet weak var lbDescrption: UILabel!
+    @IBOutlet weak var lbPrice: UILabel!
+    @IBOutlet weak var lbQuantity: UILabel!
+    
 }

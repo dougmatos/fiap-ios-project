@@ -68,7 +68,7 @@ class ProductAddViewController: UIViewController {
             firestore.collection(collection).addDocument(data: data){error in
                 self.dismiss(animated: true, completion: nil)
                 if(error == nil){
-                    if let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "ProductsTableViewController"){
+                    if let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "tbSeller"){
                         self.present(mainVC, animated: true, completion: nil)
                     }
                 } else{
