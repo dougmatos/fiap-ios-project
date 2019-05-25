@@ -41,6 +41,9 @@ class SignUpViewController: UIViewController {
         }
         
         if(messageError == ""){
+            let alert = UIAlertController(title: nil, message: "Por favor, aguarde", preferredStyle: UIAlertController.Style.alert)
+            present(alert, animated: true, completion: nil)
+            
             Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
                 if(error == nil){
                     if let vcLogin = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController"){
@@ -49,6 +52,7 @@ class SignUpViewController: UIViewController {
                 } else{
                     self.lbErrorMessage.text = error!.localizedDescription
                 }
+                self.dismiss(animated: true, completion: nil)
             }
         } else{
             lbErrorMessage.text = messageError
