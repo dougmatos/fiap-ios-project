@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		962A3C772298DF40005688F0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962A3C762298DF40005688F0 /* SignUpViewController.swift */; };
+		962A3C792298E897005688F0 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962A3C782298E897005688F0 /* MainViewController.swift */; };
 		963F857F2294456500244D6A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F857E2294456500244D6A /* AppDelegate.swift */; };
 		963F85812294456500244D6A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963F85802294456500244D6A /* ViewController.swift */; };
 		963F85842294456500244D6A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963F85822294456500244D6A /* Main.storyboard */; };
@@ -18,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		962A3C762298DF40005688F0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		962A3C782298E897005688F0 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		963F857B2294456500244D6A /* hora do recreio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "hora do recreio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		963F857E2294456500244D6A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		963F85802294456500244D6A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,8 +54,17 @@
 				AF7DC48B80A1D0FC14A0D2E8 /* Pods-hora do recreio.debug.xcconfig */,
 				BB8B3BE81319A339230A3528 /* Pods-hora do recreio.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		962A3C752298DE9E005688F0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				963F85802294456500244D6A /* ViewController.swift */,
+				962A3C762298DF40005688F0 /* SignUpViewController.swift */,
+				962A3C782298E897005688F0 /* MainViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		963F85722294456400244D6A = {
@@ -75,10 +88,10 @@
 		963F857D2294456500244D6A /* hora do recreio */ = {
 			isa = PBXGroup;
 			children = (
+				962A3C752298DE9E005688F0 /* Controllers */,
 				96E3422722976DA500956CC2 /* GoogleService-Info.plist */,
 				964030662296E00F00048752 /* Assets.xcassets */,
 				963F857E2294456500244D6A /* AppDelegate.swift */,
-				963F85802294456500244D6A /* ViewController.swift */,
 				963F85822294456500244D6A /* Main.storyboard */,
 				963F858A2294456700244D6A /* LaunchScreen.storyboard */,
 				963F858D2294456700244D6A /* Info.plist */,
@@ -213,7 +226,9 @@
 			files = (
 				963F85812294456500244D6A /* ViewController.swift in Sources */,
 				963F85872294456500244D6A /* hora_do_recreio.xcdatamodeld in Sources */,
+				962A3C772298DF40005688F0 /* SignUpViewController.swift in Sources */,
 				963F857F2294456500244D6A /* AppDelegate.swift in Sources */,
+				962A3C792298E897005688F0 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
