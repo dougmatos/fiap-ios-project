@@ -8,11 +8,12 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+class SobreViewController: UIViewController {
 
+    @IBOutlet weak var lbVersionApp: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        lbVersionApp.text = Bundle.main.infoDictionary?["CFBundleVersion"] as? String
     }
     
 

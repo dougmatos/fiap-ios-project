@@ -49,10 +49,12 @@ class ViewController: UIViewController {
             present(alert, animated: true, completion: nil)
             
             Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+                self.dismiss(animated: true, completion: nil)
                 if(error != nil){
                     self.lbErrorMesage.text = error?.localizedDescription
+                } else{
+                    self.showMainScreen()
                 }
-                self.dismiss(animated: true, completion: nil)
             }
         } else{
             lbErrorMesage.text = messageError
@@ -65,9 +67,9 @@ class ViewController: UIViewController {
     }
     
     private func showMainScreen(){
-        if let mainVC = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController"){
-            self.navigationController?.pushViewController(mainVC, animated: true)
-        }
+        let storyboard = UIStoryboard(name: "SellerStoryboard", bundle: nil)
+        let mainVC = storyboard.instantiateViewController(withIdentifier: "tbSeller")
+        present(mainVC, animated: true, completion: nil)
     }
 }
 

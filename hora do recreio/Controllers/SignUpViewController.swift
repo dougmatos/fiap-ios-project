@@ -46,9 +46,9 @@ class SignUpViewController: UIViewController {
             
             Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
                 if(error == nil){
-                    if let vcLogin = self.storyboard?.instantiateViewController(withIdentifier: "MainViewController"){
-                        self.navigationController?.pushViewController(vcLogin, animated: true)
-                    }
+                    let storyboard = UIStoryboard(name: "SellerStoryboard", bundle: nil)
+                    let mainVC = storyboard.instantiateViewController(withIdentifier: "tbSeller")
+                    self.present(mainVC, animated: true, completion: nil)
                 } else{
                     self.lbErrorMessage.text = error!.localizedDescription
                 }
