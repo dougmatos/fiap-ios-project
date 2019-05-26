@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>197088576793-ki2f8h0umtuad1n8gjd81h2071flvoql.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.197088576793-ki2f8h0umtuad1n8gjd81h2071flvoql</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD6b0YlAMVwr5i-4Oi3Lq5c1IQzLIR74YI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>197088576793</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>br.com.bitsme.hora-do-recreio</string>
+	<key>PROJECT_ID</key>
+	<string>fiap-ios-final</string>
+	<key>STORAGE_BUCKET</key>
+	<string>fiap-ios-final.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:197088576793:ios:febd8feff21d1e39</string>
+	<key>DATABASE_URL</key>
+	<string>https://fiap-ios-final.firebaseio.com</string>
+</dict>
+</plist>
