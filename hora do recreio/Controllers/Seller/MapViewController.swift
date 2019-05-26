@@ -18,7 +18,9 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        self.navigationController?.setNavigationBarHidden(false, animated: false)
+        
         mkNearSchools.setRegion(store.getCordinateRegion(), animated: true)
         mkNearSchools.addAnnotation(store)
     }

@@ -67,8 +67,14 @@ class ViewController: UIViewController {
     }
     
     private func showMainScreen(){
+        
         let storyboard = UIStoryboard(name: "SellerStoryboard", bundle: nil)
-        let mainVC = storyboard.instantiateViewController(withIdentifier: "tbSeller")
+        let mainVC = storyboard.instantiateViewController(withIdentifier: "tbSeller") as! UITabBarController
+        
+        if(UserDefaults.standard.bool(forKey: "IsMapInitial")){
+            mainVC.selectedIndex = 1
+        }
+        
         present(mainVC, animated: true, completion: nil)
     }
 }

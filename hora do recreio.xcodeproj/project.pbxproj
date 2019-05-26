@@ -25,6 +25,7 @@
 		967A02F8229AF2C800E2BD24 /* ProductEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A02F7229AF2C800E2BD24 /* ProductEditViewController.swift */; };
 		967A02FB229B0F2C00E2BD24 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967A02FA229B0F2C00E2BD24 /* MapKit.framework */; };
 		96D57FF1229B38C9002F6D84 /* ConfigViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96D57FF0229B38C9002F6D84 /* ConfigViewController.swift */; };
+		96D57FF3229B3FE8002F6D84 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 96D57FF2229B3FE8002F6D84 /* Settings.bundle */; };
 		96E3422822976DA500956CC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96E3422722976DA500956CC2 /* GoogleService-Info.plist */; };
 		B39E4C922C05017C613FA7EE /* Pods_hora_do_recreio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E8BEBFA8C541149B1CB006 /* Pods_hora_do_recreio.framework */; };
 /* End PBXBuildFile section */
@@ -50,6 +51,7 @@
 		967A02F7229AF2C800E2BD24 /* ProductEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEditViewController.swift; sourceTree = "<group>"; };
 		967A02FA229B0F2C00E2BD24 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		96D57FF0229B38C9002F6D84 /* ConfigViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigViewController.swift; sourceTree = "<group>"; };
+		96D57FF2229B3FE8002F6D84 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		96E3422722976DA500956CC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF7DC48B80A1D0FC14A0D2E8 /* Pods-hora do recreio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hora do recreio.debug.xcconfig"; path = "Target Support Files/Pods-hora do recreio/Pods-hora do recreio.debug.xcconfig"; sourceTree = "<group>"; };
 		BB8B3BE81319A339230A3528 /* Pods-hora do recreio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hora do recreio.release.xcconfig"; path = "Target Support Files/Pods-hora do recreio/Pods-hora do recreio.release.xcconfig"; sourceTree = "<group>"; };
@@ -143,6 +145,7 @@
 				962A3C7A2299B4CE005688F0 /* SellerStoryboard.storyboard */,
 				963F858D2294456700244D6A /* Info.plist */,
 				963F85852294456500244D6A /* hora_do_recreio.xcdatamodeld */,
+				96D57FF2229B3FE8002F6D84 /* Settings.bundle */,
 			);
 			path = "hora do recreio";
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				96E3422822976DA500956CC2 /* GoogleService-Info.plist in Resources */,
 				964030672296E00F00048752 /* Assets.xcassets in Resources */,
 				962A3C7B2299B4CE005688F0 /* SellerStoryboard.storyboard in Resources */,
+				96D57FF3229B3FE8002F6D84 /* Settings.bundle in Resources */,
 				963F85842294456500244D6A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
