@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96002757229B13B00015988B /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96002756229B13B00015988B /* MapViewController.swift */; };
+		96002759229B226A0015988B /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96002758229B226A0015988B /* Store.swift */; };
 		962A3C772298DF40005688F0 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962A3C762298DF40005688F0 /* SignUpViewController.swift */; };
 		962A3C792298E897005688F0 /* SobreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 962A3C782298E897005688F0 /* SobreViewController.swift */; };
 		962A3C7B2299B4CE005688F0 /* SellerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 962A3C7A2299B4CE005688F0 /* SellerStoryboard.storyboard */; };
@@ -21,11 +23,14 @@
 		963F858C2294456700244D6A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 963F858A2294456700244D6A /* LaunchScreen.storyboard */; };
 		964030672296E00F00048752 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 964030662296E00F00048752 /* Assets.xcassets */; };
 		967A02F8229AF2C800E2BD24 /* ProductEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967A02F7229AF2C800E2BD24 /* ProductEditViewController.swift */; };
+		967A02FB229B0F2C00E2BD24 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 967A02FA229B0F2C00E2BD24 /* MapKit.framework */; };
 		96E3422822976DA500956CC2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 96E3422722976DA500956CC2 /* GoogleService-Info.plist */; };
 		B39E4C922C05017C613FA7EE /* Pods_hora_do_recreio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4E8BEBFA8C541149B1CB006 /* Pods_hora_do_recreio.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		96002756229B13B00015988B /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		96002758229B226A0015988B /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		962A3C762298DF40005688F0 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		962A3C782298E897005688F0 /* SobreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SobreViewController.swift; sourceTree = "<group>"; };
 		962A3C7A2299B4CE005688F0 /* SellerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SellerStoryboard.storyboard; sourceTree = "<group>"; };
@@ -42,6 +47,7 @@
 		963F858D2294456700244D6A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		964030662296E00F00048752 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		967A02F7229AF2C800E2BD24 /* ProductEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductEditViewController.swift; sourceTree = "<group>"; };
+		967A02FA229B0F2C00E2BD24 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		96E3422722976DA500956CC2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		AF7DC48B80A1D0FC14A0D2E8 /* Pods-hora do recreio.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hora do recreio.debug.xcconfig"; path = "Target Support Files/Pods-hora do recreio/Pods-hora do recreio.debug.xcconfig"; sourceTree = "<group>"; };
 		BB8B3BE81319A339230A3528 /* Pods-hora do recreio.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hora do recreio.release.xcconfig"; path = "Target Support Files/Pods-hora do recreio/Pods-hora do recreio.release.xcconfig"; sourceTree = "<group>"; };
@@ -53,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				967A02FB229B0F2C00E2BD24 /* MapKit.framework in Frameworks */,
 				B39E4C922C05017C613FA7EE /* Pods_hora_do_recreio.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -87,6 +94,7 @@
 				962A3C9F2299D6DF005688F0 /* ProductsTableViewController.swift */,
 				962A3CA12299D718005688F0 /* ProductAddViewController.swift */,
 				967A02F7229AF2C800E2BD24 /* ProductEditViewController.swift */,
+				96002756229B13B00015988B /* MapViewController.swift */,
 			);
 			path = Seller;
 			sourceTree = "<group>";
@@ -95,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				962A3CA42299E836005688F0 /* ProductItem.swift */,
+				96002758229B226A0015988B /* Store.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -120,6 +129,7 @@
 		963F857D2294456500244D6A /* hora do recreio */ = {
 			isa = PBXGroup;
 			children = (
+				967A02F9229AFAF400E2BD24 /* Repository */,
 				962A3CA32299E7FD005688F0 /* Models */,
 				962A3C752298DE9E005688F0 /* Controllers */,
 				96E3422722976DA500956CC2 /* GoogleService-Info.plist */,
@@ -134,9 +144,17 @@
 			path = "hora do recreio";
 			sourceTree = "<group>";
 		};
+		967A02F9229AFAF400E2BD24 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
 		AB63BA51E3337903B4C396A4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				967A02FA229B0F2C00E2BD24 /* MapKit.framework */,
 				F4E8BEBFA8C541149B1CB006 /* Pods_hora_do_recreio.framework */,
 			);
 			name = Frameworks;
@@ -176,6 +194,11 @@
 				TargetAttributes = {
 					963F857A2294456500244D6A = {
 						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -259,8 +282,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96002757229B13B00015988B /* MapViewController.swift in Sources */,
 				962A3CA02299D6DF005688F0 /* ProductsTableViewController.swift in Sources */,
 				963F85812294456500244D6A /* ViewController.swift in Sources */,
+				96002759229B226A0015988B /* Store.swift in Sources */,
 				962A3CA22299D718005688F0 /* ProductAddViewController.swift in Sources */,
 				962A3CA52299E836005688F0 /* ProductItem.swift in Sources */,
 				963F85872294456500244D6A /* hora_do_recreio.xcdatamodeld in Sources */,
