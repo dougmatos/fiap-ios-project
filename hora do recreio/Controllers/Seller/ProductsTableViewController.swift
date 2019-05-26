@@ -70,20 +70,16 @@ class ProductsTableViewController: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cellProduct", for: indexPath) as! ProductTableViewCell
-        let product = productItems[indexPath.row]
         
-        cell.lbDescrption.text = product.description
-        cell.lbPrice.text = "R$ \(product.price)"
-        cell.lbQuantity.text = "Quantidade \(product.quantity)"
-
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cellProduct", for: indexPath) as! ProductTableViewCell
+        cell.addProduct(productItems[indexPath.row])
         return cell
     }
     
     // Override to support editing the table view.
     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
         if editingStyle == .delete {
-            
             let alert = UIAlertController(title: nil, message: "Por favor, aguarde", preferredStyle: UIAlertController.Style.alert)
             present(alert, animated: true, completion: nil)
             
@@ -97,6 +93,23 @@ class ProductsTableViewController: UITableViewController {
         }
     }
     
+    /*
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let product = productItems[indexPath.row]
+        print(product.description)
+    }
+    */
+    // MARK: - Navigation
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if  let productCell = sender as? ProductTableViewCell,
+            let vc = segue.destination as? ProductEditViewController,
+            let product = productCell.product{
+            
+            vc.product = product
+        }
+    }
 
 }
 
@@ -104,5 +117,16 @@ class ProductTableViewCell: UITableViewCell{
     @IBOutlet weak var lbDescrption: UILabel!
     @IBOutlet weak var lbPrice: UILabel!
     @IBOutlet weak var lbQuantity: UILabel!
+    
+    var product : ProductItem?
+    
+    
+    func addProduct(_ item : ProductItem){
+        
+        lbDescrption.text = item.description
+        lbPrice.text = "R$ \(item.price)"
+        lbQuantity.text = "Quantidade \(item.quantity)"
+        product = item
+    }
     
 }
