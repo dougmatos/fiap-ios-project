@@ -25,7 +25,7 @@ class LogoutViewController: UIViewController {
             try firebaseAuth.signOut()
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             let loginVC = storyboard.instantiateViewController(withIdentifier: "ViewController")
-            self.present(loginVC, animated: true, completion: nil)
+            present(loginVC, animated: true, completion: nil)
             
         } catch let signOutError as NSError {
             let alert = UIAlertController(

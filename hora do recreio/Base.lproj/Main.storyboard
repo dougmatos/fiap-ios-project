@@ -47,7 +47,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Criar uma conta"/>
                                 <connections>
-                                    <segue destination="gjK-53-pvP" kind="show" id="Tp2-XX-vcF"/>
+                                    <segue destination="gjK-53-pvP" kind="show" id="fJt-7j-pT5"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mensagem de erro" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ajS-Of-lMj">
